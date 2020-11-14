@@ -1,9 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserSetting">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/go_back_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+        <TextView
+            android:id="@+id/setting_text"
+            android:layout_width="450dp"
+            android:layout_height="64dp"
+            android:gravity="center|center_horizontal"
+            android:text="SETTINGS"
+            android:textSize="35sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/preparetime_text"
+                android:layout_width="120dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center|center_horizontal"
+                android:gravity="center|center_horizontal"
+                android:text="준비시간   : "
+                android:textSize="25sp" />
+
+        <EditText
+                android:id="@+id/time_edit"
+                android:layout_width="150dp"
+                android:layout_height="54dp"
+                android:textSize="25sp"/>
+
+        <TextView
+                android:id="@+id/minute_Text"
+                android:layout_width="50dp"
+                android:layout_height="54dp"
+                android:gravity="center|center_horizontal"
+                android:text="분"
+                android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/moving_speed_text"
+                android:layout_width="120dp"
+                android:layout_height="54dp"
+                android:text="이동 속도  : "
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/moving_speed_edit"
+                android:layout_width="150dp"
+                android:layout_height="54dp"
+                android:gravity="center|center_horizontal" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/alarm_release"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:gravity="center|center_horizontal"
+                android:text="알람해제방법"
+                android:textSize="23sp"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/release_information"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:gravity="center|center_horizontal"
+                android:src="@android:drawable/ic_menu_info_details" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/original_chip"
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:text="ORIGINAL"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/code_chip"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:text="CODE"
+            android:textSize="20sp"
+            android:latout_gravity="center" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/robot_chip"
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:text="ROBOT"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tts_Text"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:gravity="center|center_horizontal"
+            android:text="음성안내(TTS)"
+            android:textSize="25sp" />
+
+        <Switch
+            android:id="@+id/tts_switch"
+            android:layout_width="112dp"
+            android:layout_height="60dp"
+            android:checked="true"
+            android:switchMinWidth="100dp"
+            android:switchPadding="20dp" />
+    </LinearLayout>
+</LinearLayout>
