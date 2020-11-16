@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <ImageButton
+            android:id="@+id/imageView2"
+            android:layout_width="67dp"
+            android:layout_height="64dp"
+            app:srcCompat="@android:drawable/ic_menu_revert" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="337dp"
+            android:layout_height="64dp"
+            android:gravity="center|center_horizontal"
+            android:text="목적지 관리"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center">
+
+        <SearchView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
