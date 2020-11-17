@@ -18,7 +18,7 @@
             app:srcCompat="@android:drawable/ic_menu_revert" />
         <TextView
             android:id="@+id/setting_text"
-            android:layout_width="450dp"
+            android:layout_width="match_parent"
             android:layout_height="64dp"
             android:gravity="center|center_horizontal"
             android:text="SETTINGS"
@@ -28,120 +28,114 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <TextView
-                android:id="@+id/preparetime_text"
-                android:layout_width="120dp"
-                android:layout_height="54dp"
-                android:layout_gravity="center|center_horizontal"
-                android:gravity="center|center_horizontal"
-                android:text="준비시간   : "
-                android:textSize="25sp" />
-
-        <EditText
-                android:id="@+id/time_edit"
-                android:layout_width="150dp"
-                android:layout_height="54dp"
-                android:textSize="25sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <TextView
-                android:id="@+id/minute_Text"
-                android:layout_width="50dp"
-                android:layout_height="54dp"
-                android:gravity="center|center_horizontal"
-                android:text="분"
-                android:textSize="25sp" />
+            android:id="@+id/prepare_time_text"
+            android:layout_width="120dp"
+            android:layout_height="54dp"
+            android:layout_gravity="center|center_horizontal"
+            android:gravity="center|center_horizontal"
+            android:text="준비시간   : "
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/time_edit"
+            android:layout_width="150dp"
+            android:layout_height="54dp"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/minute_Text"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:gravity="center|center_horizontal"
+            android:text="분"
+            android:textSize="25sp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+        android:layout_height="40dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/moving_speed_text"
+            android:layout_width="120dp"
+            android:layout_height="54dp"
+            android:text="이동 속도  : "
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"/>
 
-            <TextView
-                android:id="@+id/moving_speed_text"
-                android:layout_width="120dp"
-                android:layout_height="54dp"
-                android:text="이동 속도  : "
-                android:textSize="25sp" />
+        <EditText
+            android:id="@+id/moving_speed_edit"
+            android:layout_width="150dp"
+            android:layout_height="54dp"
+            android:gravity="center|center_horizontal" />
 
-            <EditText
-                android:id="@+id/moving_speed_edit"
-                android:layout_width="150dp"
-                android:layout_height="54dp"
-                android:gravity="center|center_horizontal" />
-        </LinearLayout>
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            app:srcCompat="@android:drawable/arrow_down_float" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"/>
-        <LinearLayout
-            android:layout_width="300dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="210dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center">
 
-            <TextView
-                android:id="@+id/alarm_release"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-                android:gravity="center|center_horizontal"
-                android:text="알람해제방법"
-                android:textSize="23sp"
-                android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/alarm_release"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:gravity="center|center_horizontal"
+            android:text="알람해제방법"
+            android:textSize="23sp"
+            android:layout_gravity="center"/>
 
-            <ImageButton
-                android:id="@+id/release_information"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center"
-                android:gravity="center|center_horizontal"
-                android:src="@android:drawable/ic_menu_info_details" />
-        </LinearLayout>
+        <ImageButton
+            android:id="@+id/release_information"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center|center_horizontal"
+            android:src="@android:drawable/ic_menu_info_details" />
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="500dp"
+        android:layout_width="250dp"
         android:layout_height="60dp"
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_gravity="center">
 
-        <com.google.android.material.chip.Chip
-            android:id="@+id/original_chip"
-            android:layout_width="130dp"
-            android:layout_height="55dp"
+            <RadioButton
+            android:id="@+id/original_button"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
             android:text="ORIGINAL"
-            android:textSize="20sp"
-            android:gravity="center"/>
+            />
 
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/code_chip"
-            android:layout_width="100dp"
-            android:layout_height="55dp"
-            android:text="CODE"
-            android:textSize="20sp"
-            android:latout_gravity="center" />
-
-        <com.google.android.material.chip.Chip
-            android:id="@+id/robot_chip"
-            android:layout_width="130dp"
-            android:layout_height="55dp"
-            android:text="ROBOT"
-            android:textSize="20sp" />
-
+        <RadioButton
+            android:id="@+id/code_button"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="CODE" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"/>
+        android:layout_height="20dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
