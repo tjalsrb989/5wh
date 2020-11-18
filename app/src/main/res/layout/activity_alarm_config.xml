@@ -158,8 +158,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:inputType="textPersonName"
-                android:text="Input time here..."
+                android:inputType="time"
+                android:hint="rec_time"
                 android:textStyle="italic" />
         </LinearLayout>
 
@@ -259,6 +259,8 @@
             android:layout_height="80dp"
             android:layout_weight="1"
             android:text="완료"
+            android:clickable="true"
+            android:onClick="onClickAlarmConfig"
             android:textSize="24sp" />
     </LinearLayout>
 
