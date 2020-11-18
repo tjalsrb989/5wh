@@ -15,6 +15,8 @@
             android:id="@+id/go_back_button"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:clickable="true"
+            android:onClick="onClick"
             app:srcCompat="@android:drawable/ic_menu_revert" />
         <TextView
             android:id="@+id/setting_text"
@@ -22,6 +24,7 @@
             android:layout_height="64dp"
             android:gravity="center|center_horizontal"
             android:text="SETTINGS"
+
             android:textSize="35sp" />
     </LinearLayout>
     <LinearLayout

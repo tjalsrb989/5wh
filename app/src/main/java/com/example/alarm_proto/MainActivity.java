@@ -12,15 +12,15 @@ public class MainActivity extends AppCompatActivity {
 
         Intent usrIntent = new Intent(this,UserSetting.class);
         Intent alarmIntent = new Intent(this,AlarmManagement.class);
-        Intent intent = new Intent(this, DestinationList.class);
+        Intent intent = new Intent(this, AddDestination.class);
         switch(v.getId()){
-            case R.id.button2:
+            case R.id.alarm_button:
                 startActivity(alarmIntent);
                 break;
-            case R.id.button3:
+            case R.id.destination_button:
                 startActivity(intent);
                 break;
-            case R.id.imageButton:
+            case R.id.setting_button:
                 startActivity(usrIntent);
                 break;
         }
@@ -31,4 +31,5 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
 }

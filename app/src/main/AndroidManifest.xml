@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Alarm_proto">
-        <activity android:name=".RouteSelect"></activity>
+        <activity android:name=".DestinationSearch"/>
+        <activity android:name=".AddDestination" />
+        <activity android:name=".RouteSelect" />
         <activity android:name=".RouteConfig" />
         <activity android:name=".AlarmManagement" />
         <activity android:name=".AlarmConfig" />
         <activity android:name=".UserSetting" />
-        <activity android:name=".DestinationList" />
+        <activity android:name=".DestinationFinish" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

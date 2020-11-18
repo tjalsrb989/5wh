@@ -16,6 +16,8 @@ public class RouteConfig extends AppCompatActivity {
             case R.id.imageButton6:
                 startActivity(rSelectIntent);
                 break;
+            case R.id.imageButton4:
+                this.onBackPressed();
         }
     }
 

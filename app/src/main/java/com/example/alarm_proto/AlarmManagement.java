@@ -13,8 +13,11 @@ public class AlarmManagement extends AppCompatActivity {
         Intent aconfigIntent = new Intent(this,AlarmConfig.class);
 
         switch(v.getId()){
-            case R.id.button4:
+            case R.id.alarm_add:
                 startActivity(aconfigIntent);
+                break;
+            case R.id.alarmmng_back:
+                this.onBackPressed();
                 break;
         }
 

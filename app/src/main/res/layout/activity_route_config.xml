@@ -15,6 +15,8 @@
         android:layout_marginEnd="18dp"
         android:layout_marginRight="18dp"
         android:layout_marginBottom="19dp"
+        android:clickable="true"
+        android:onClick="onClickRoute"
         app:layout_constraintBottom_toTopOf="@+id/editText3"
         app:layout_constraintEnd_toStartOf="@+id/textView12"
         app:layout_constraintStart_toStartOf="parent"

@@ -12,7 +12,9 @@ public class AlarmConfig extends AppCompatActivity {
         Intent routeIntent = new Intent(this,RouteConfig.class);
 
         switch(v.getId()){
-            case R.id.button6: startActivity(routeIntent);
+            case R.id.route_sel: startActivity(routeIntent);
+            break;
+            case R.id.alarmcon_back: this.onBackPressed();
             break;
         }
     }

@@ -14,6 +14,8 @@
             android:id="@+id/alarmcon_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClickAlarmConfig"
             app:srcCompat="@android:drawable/ic_menu_revert" />
 
         <TextView
@@ -36,6 +38,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="경로선택"
+            android:clickable="true"
+            android:onClick="onClickAlarmConfig"
             android:textSize="24sp" />
 
         <LinearLayout
@@ -258,4 +262,5 @@
             android:textSize="24sp" />
     </LinearLayout>
 
-</>
+
+</LinearLayout>
