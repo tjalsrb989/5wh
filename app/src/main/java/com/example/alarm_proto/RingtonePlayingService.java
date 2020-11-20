@@ -40,11 +40,15 @@ public class RingtonePlayingService extends Service {
                     .setContentTitle("알람시작")
                     .setContentText("알람음이 재생됩니다.")
                     .setSmallIcon(R.mipmap.ic_launcher)
+                    .setDefaults(Notification.DEFAULT_VIBRATE)
+                    .setAutoCancel(true)
 
                     .build();
 
             startForeground(1, notification);
         }
+
+
     }
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
@@ -68,6 +72,7 @@ public class RingtonePlayingService extends Service {
         if(!this.isRunning && startId == 1) {
 
             mediaPlayer = MediaPlayer.create(this,R.raw.bibi);
+            mediaPlayer.setLooping(true);
             mediaPlayer.start();
 
             this.isRunning = true;
