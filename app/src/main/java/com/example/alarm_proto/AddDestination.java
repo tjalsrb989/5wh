@@ -19,7 +19,7 @@ public class AddDestination extends AppCompatActivity {
             case R.id.go_back_button:
                 this.onBackPressed();
                 break;
-            case R.id.add_destination_button:
+            case R.id.add:
                 startActivity(desSrcIntent);
 
         }
