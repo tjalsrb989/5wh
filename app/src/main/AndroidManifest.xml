@@ -3,9 +3,12 @@
     package="com.example.alarm_proto">
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <meta-data android:name="com.kakao.sdk.AppKey" android:value="cd858a4418d7273af074aa26ca8f5b7a"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <meta-data
+        android:name="com.kakao.sdk.AppKey"
+        android:value="cd858a4418d7273af074aa26ca8f5b7a" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Alarm_proto">
-        <activity android:name=".AlarmClosed"></activity>
+        <activity android:name=".MainActivity2"></activity>
+        <activity android:name=".AlarmClosed" />
 
         <receiver android:name=".Alarm_Receiver" />
 
